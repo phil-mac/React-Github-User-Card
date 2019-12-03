@@ -1,5 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
+import {Container} from '@material-ui/core';
+
 import './App.css';
 
 import GithubUserInfo from './components/GithubUserInfo';
@@ -35,9 +37,9 @@ class App extends React.Component {
 
   render(){
     return (
-      <div className="App">
+      <Container maxWidth='md'>
         <GithubUserInfo userData={this.state.userData} followers={this.state.followers}/>
-      </div>
+      </Container>
     )
   }
 }
