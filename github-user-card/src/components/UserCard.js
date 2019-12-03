@@ -11,7 +11,7 @@ import Typography from '@material-ui/core/Typography';
 const useStyles = makeStyles({
   card: {
     // maxWidth: 345,
-    width: 500,
+    maxWidth: 500,
     margin: '2rem auto'
   },
   media: {
@@ -38,14 +38,6 @@ export default (props) => {
                 </Typography>
                 </CardContent>
             </CardActionArea>
-            <CardActions>
-                <Button size="small" color="primary">
-                Share
-                </Button>
-                <Button size="small" color="primary">
-                Learn More
-                </Button>
-            </CardActions>
             </Card>
 
         // <div style={{border: '1px solid black'}}>
